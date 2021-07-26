@@ -122,4 +122,6 @@ public final class SparkBatchConstant {
     public static final String ALS_MODEL_COMPONENT = "tALSModel";
 
     public static final String RECOMMEND_COMPONENT = "tRecommend";
+
+    public static final String MODEL_ENCODER_COMPONENT = "tModelEncoder";
 }
