@@ -216,10 +216,12 @@ public class SPL30xDistribution extends AbstractDistribution
         result.put(new NodeComponentTypeBean(ComponentType.SPARKBATCH, SparkBatchConstant.GRADIENT_BOOSTED_TREE_MODEL),
                 SPL30xNodeModuleGroup.getModuleGroup(ModuleGroupName.MATH.get(getVersion()),
                         SparkBatchConstant.SPARK_BATCH_SPARKCONFIGURATION_LINKEDPARAMETER, SPL30xDistribution.SPARK_VERSION));
+
+        // spark model encoder
         result
                 .put(new NodeComponentTypeBean(ComponentType.SPARKBATCH, SparkBatchConstant.MODEL_ENCODER_COMPONENT),
                         SPL30xNodeModuleGroup
-                                .getModuleGroup(ModuleGroupName.MATH.get(getVersion()),
+                                .getModuleGroup(ModuleGroupName.MODEL_ENCODER.get(getVersion()),
                                         SparkBatchConstant.SPARK_BATCH_SPARKCONFIGURATION_LINKEDPARAMETER,
                                         SPL30xDistribution.SPARK_VERSION));
 
