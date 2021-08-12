@@ -225,6 +225,15 @@ public class SPL30xDistribution extends AbstractDistribution
                                         SparkBatchConstant.SPARK_BATCH_SPARKCONFIGURATION_LINKEDPARAMETER,
                                         SPL30xDistribution.SPARK_VERSION));
 
+        // spark Streaming model encoder
+        result
+                .put(new NodeComponentTypeBean(ComponentType.SPARKSTREAMING,
+                        SparkStreamingConstant.TMODEL_ENCODER_COMPONENT),
+                        SPL30xNodeModuleGroup
+                                .getModuleGroup(ModuleGroupName.MODEL_ENCODER.get(getVersion()),
+                                        SparkStreamingConstant.SPARK_STREAMING_SPARKCONFIGURATION_LINKEDPARAMETER,
+                                        SPL30xDistribution.SPARK_VERSION));
+
         // Spark Streaming TDM
         result.put(new NodeComponentTypeBean(ComponentType.SPARKSTREAMING, SparkStreamingConstant.HMAP_RECORD_COMPONENT),
                 SPL30xNodeModuleGroup.getModuleGroup(ModuleGroupName.TDM.get(getVersion()),
