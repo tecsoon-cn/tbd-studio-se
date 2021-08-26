@@ -145,7 +145,7 @@ public class RetrieveConfigurationProcess extends org.talend.designer.core.ui.ed
         NodeContainer javaContainer = new NodeContainer(javaNode);
         this.addNodeContainer(javaContainer);
         //
-        initTLibraryLoadNode(inputNode);
+//        initTLibraryLoadNode(inputNode);
     }
 
     private Node getInputNode() {
